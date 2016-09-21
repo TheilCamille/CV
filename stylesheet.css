@@ -1,0 +1,46 @@
+body {
+	text-align: center;
+}
+.experience-pro {
+	border: 1px dashed;
+	position: absolute;
+	top: 600px;
+	left: 200px;
+
+}
+.renseignement-perso {
+	border: 1px dashed;
+	text-align: left;
+	padding: 10px 20px 20px 20px;
+	float: left;
+
+
+
+
+}
+.plus-perso {
+	border: 1px dashed;
+	position: absolute;
+	top: 980px;
+	left: 200px;
+
+}
+.diplome {
+	border: 1px dashed;
+	position: absolute;
+	top: 850px;
+	left: 200px;
+}
+
+.lune {
+	border-style: groove;
+	border-radius: 200px;
+	box-shadow: 4px 4px 5px #000000;
+	float: right;
+}
+
+.formulaire {
+	position: absolute;
+	top: 400px;
+	left: 200px;
+}
