@@ -3,9 +3,12 @@ body {
 }
 .experience-pro {
 	border: 1px dashed;
-	position: absolute;
-	top: 500px;
-	left: 300px;
+	animation-name: experience-pro;
+	animation-duration: 15s;
+	animation-fill-mode: both;
+	animation-direction: alternate;
+	animation-iteration-count: initial;
+	
 
 }
 .renseignement-perso {
@@ -16,26 +19,27 @@ body {
 	animation-iteration-count: initial;
 
 	border: 1px dashed;
-	text-align: left;
-	padding: 10px 20px 20px 20px;
-	float: left;
-
+	box-sizing: 100px;
 
 
 
 }
 .plus-perso {
 	border: 1px dashed;
-	position: absolute;
-	top: 900px;
-	left: 300px;
+	animation-name: plus-perso;
+	animation-duration: 15s;
+	animation-fill-mode: both;
+	animation-direction: alternate;
+	animation-iteration-count: initial;
 
 }
 .diplome {
 	border: 1px dashed;
-	position: absolute;
-	top: 750px;
-	left: 300px;
+	animation-name: diplome;
+	animation-duration: 15s;
+	animation-fill-mode: alternate;
+	animation-direction: alternate;
+	animation-iteration-count: initial;
 }
 
 .lune {
@@ -54,9 +58,13 @@ body {
 }
 
 .formulaire {
-	position: absolute;
-	top: 1100px;
-	left: 200px;
+
+	animation-name: formulaire;
+	animation-duration: 15s;
+	animation-fill-mode: both;
+	animation-direction: alternate;
+	animation-iteration-count: initial;
+	
 }
 
 
@@ -65,13 +73,14 @@ body {
  
   @keyframes slide {
   0% {
-  transform: translateX(400%);
+  transform: translateX(-400%);
   visibility: visible;
   }
  50% {
-  transform: translateX(0%);
   transform: rotate(40deg);
   }
+  100% { 
+  transform:translateX(400%); }
 
   	}
 
@@ -79,10 +88,40 @@ body {
  0% { 
  transform: translateY(0%); }
  50% {
- transform: translateY(120%);
+ transform: translateY(0%);
  }
  100% {
- transform: translateY(-50%);
- transform: translateX(120%);
+ transform: translateY(0%);
+ transform: translateX(0%);
  }
  	}
+
+ @keyframes experience-pro {
+ 0% {
+ 	transform: translateY(-2000px);}
+ 
+ 100% {
+ 	transform: translateY(0px);}
+ }
+
+@keyframes diplome {
+0% {
+	transform: translateY(-2000px);}
+100% {
+	transform: translateY(0px);}
+}
+
+@keyframes plus-perso {
+0% {
+	transform: translateY(-2000px);}
+100%{
+	transform: translateY(0px);}
+}
+
+@keyframes formulaire {
+0% {
+	transform: translateY(-2000px);}
+100%{
+	transform: translateY(0);
+}
+}
